@@ -3,7 +3,7 @@
     public class SD
     {
         public static string CouponAPIBase { get; set; }
-        //public static string ProductAPIBase { get; set; }
+        public static string ProductAPIBase { get; set; }
         public static string AuthAPIBase { get; set; }
         //public static string ShoppingCartAPIBase { get; set; }
         //public static string OrderAPIBase { get; set; }
@@ -16,6 +16,11 @@
             POST,
             PUT,
             DELETE
+        }
+        public enum ContentType
+        {
+            Json,
+            MultipartFormData,
         }
     }
 }
